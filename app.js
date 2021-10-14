@@ -1,4 +1,4 @@
-
+//SLIDER
 const slideshowImages = document.querySelectorAll(".slideshow");
 
 const nextImageDelay = 5000; 
@@ -26,19 +26,23 @@ function nextImage(){
 }
 
 
-const modal = document.querySelector('.modal')
-const previews = document.querySelectorAll('.photos')
+
+//LIGHTBOX
+/* const modal = document.querySelector('.modal')
+const image = document.querySelectorAll('.photos')
 const original = document.querySelector('.full-img')
 
 
+    w
 
-previews.forEach(preview => {
+
+image.forEach(preview => {
     preview.addEventListener('click', () => {
         modal.classList.add('open');
         original.classList.add('open');
 
-        const originalSrc = preview.getAttribute("data-original");
-        //original.src = originalSrc;
+        const originalSrc = preview.getAttribute('data-original');
+        original.src = originalSrc;
         
         
     });
@@ -49,7 +53,9 @@ modal.addEventListener('click', (e) => {
         modal.classList.remove('open')
         original.classList.remove('open');
     }
-});
+});  */
+
+//NAVBAR
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -77,3 +83,12 @@ const navSlide = () => {
 }
 
 navSlide();
+
+/* document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelectorAll(this.getAttribute("href")).scrollIntoView({
+                behaviour: "smooth "
+        })
+    })
+}) */

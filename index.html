@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="grid.css">
-    <title>Tereza Řičánková Photography</title>
+    <link rel="stylesheet" href="lightbox.min.css">
+    <script src="https://kit.fontawesome.com/a95243db7b.js" crossorigin="anonymous"></script>
     <script src="app.js" defer></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    
+    <title>Tereza Řičánková Photography</title>
 </head>
 
 <body>
@@ -18,9 +22,9 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#">Domů</a></li>
-                <li><a href="#">O mně</a></li>
-                <li><a href="#">Fotogalerie</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#about">O mně</a></li>
+                <li><a href="#gallery">Fotogalerie</a></li>
+                <li><a href="#footer">Kontakt</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -37,13 +41,11 @@
             <img src="/img/Slider/Diana a Jan (580).jpg" alt="" class="slideshow">
         </section>
 
-    </header>
+    </header id="about">
     
-    <main>
+    <main >
 
-
-        
-        <section class="about">
+        <section id="about" class="about">
 
             <img src="/img/ricankova_photography4.png" alt="">
             <div class="about-whole">
@@ -53,46 +55,56 @@
             </div>           
         </section>
 
-        <div class="container">
+        <div id="gallery" class="container">
 
             <h2 class="heading1">Fotogalerie</h2>
 
             <div class="photos">
-                    <img src="/img/116.jpg" alt="" data-original="/img/org/116.jpg">
-                    <img src="/img/341.jpg" alt="" data-original="/img/org/341.jpg">
-                    <img src="/img/516.jpg" alt="" data-original="/img/org/516.jpg">
-                    <img src="/img/523.jpg" alt="" data-original="/img/org/523.jpg">
-                    <img src="/img/524.jpg" alt="" data-original="/img/org/524.jpg">
-                    <img src="/img/573.jpg" alt="" data-original="/img/org/573.jpg">
-                    <img src="/img/584.jpg" alt="" data-original="/img/org/584.jpg">
-                    <img src="/img/88.jpg"  alt="" data-original="/img/org/88.jpg">
-                    <img src="/img/282.jpg" alt="" data-original="/img/org/282.jpg">
-                    <img src="/img/327.jpg" alt="" data-original="/img/org/327.jpg">
-                    <img src="/img/372.jpg" alt="" data-original="/imgorg//372.jpg">
-                    <img src="/img/386.jpg" alt="" data-original="/img/org/386.jpg">
-                    <img src="/img/518.jpg" alt="" data-original="/img/org/518.jpg">
-                    <img src="/img/525.jpg" alt="" data-original="/img/org/525.jpg">
-                    <img src="/img/575.jpg" alt="" data-original="/img/org/575.jpg">
-                    <img src="/img/580.jpg" alt="" data-original="/img/org/580.jpg">
-                    <img src="/img/393.jpg" alt="" data-original="/img/org/393.jpg">
-                    <img src="/img/394.jpg" alt="" data-original="/img/org/394.jpg">
-                    <img src="/img/402.jpg" alt="" data-original="/img/org/402.jpg">
-                    <img src="/img/492.jpg" alt="" data-original="/img/org/492.jpg">
-                    <img src="/img/493.jpg" alt="" data-original="/img/org/493.jpg">
-                    <img src="/img/494.jpg" alt="" data-original="/img/org/494.jpg">
-                    <img src="/img/504.jpg" alt="" data-original="/img/org/504.jpg">
-                    <img src="/img/576.jpg" alt="" data-original="/img/org/576.jpg">
+                    <a href="/img/116.jpg" data-lightbox="mygallery"><img src="/img/116.jpg" alt="" data-original="/img/org/116.jpg"></a>
+                    <a href="/img/341.jpg" data-lightbox="mygallery"><img src="/img/341.jpg" alt="" data-original="/img/org/341.jpg"></a>
+                    <a href="/img/516.jpg" data-lightbox="mygallery"><img src="/img/516.jpg" alt="" data-original="/img/org/516.jpg"></a>
+                    <a href="/img/523.jpg" data-lightbox="mygallery"><img src="/img/523.jpg" alt="" data-original="/img/org/523.jpg"></a>
+                    <a href="/img/524.jpg" data-lightbox="mygallery"><img src="/img/524.jpg" alt="" data-original="/img/org/524.jpg"></a>
+                    <a href="/img/573.jpg" data-lightbox="mygallery"><img src="/img/573.jpg" alt="" data-original="/img/org/573.jpg"></a>
+                    <a href="/img/584.jpg" data-lightbox="mygallery"><img src="/img/584.jpg" alt="" data-original="/img/org/584.jpg"></a>
+                    <a href="/img/88.jpg" data-lightbox="mygallery"><img src="/img/88.jpg" alt="" data-original="/img/org/88.jpg"></a>
+                    <a href="/img/282.jpg" data-lightbox="mygallery"><img src="/img/282.jpg" alt="" data-original="/img/org/282.jpg"></a>
+                    <a href="/img/327.jpg" data-lightbox="mygallery"><img src="/img/327.jpg" alt="" data-original="/img/org/327.jpg"></a>
+                    <a href="/img/372.jpg" data-lightbox="mygallery"><img src="/img/372.jpg" alt="" data-original="/img/org/372.jpg"></a>
+                    <a href="/img/386.jpg" data-lightbox="mygallery"><img src="/img/386.jpg" alt="" data-original="/img/org/386.jpg"></a>
+                    <a href="/img/518.jpg" data-lightbox="mygallery"><img src="/img/518.jpg" alt="" data-original="/img/org/518.jpg"></a>
+                    <a href="/img/575.jpg" data-lightbox="mygallery"><img src="/img/575.jpg" alt="" data-original="/img/org/575.jpg"></a>
+                    <a href="/img/580.jpg" data-lightbox="mygallery"><img src="/img/580.jpg" alt="" data-original="/img/org/580.jpg"></a>
+                    <a href="/img/393.jpg" data-lightbox="mygallery"><img src="/img/393.jpg" alt="" data-original="/img/org/393.jpg"></a>
+                    <a href="/img/394.jpg" data-lightbox="mygallery"><img src="/img/394.jpg" alt="" data-original="/img/org/394.jpg"></a>
+                    <a href="/img/402.jpg" data-lightbox="mygallery"><img src="/img/402.jpg" alt="" data-original="/img/org/402.jpg"></a>
+                    <a href="/img/492.jpg" data-lightbox="mygallery"><img src="/img/492.jpg" alt="" data-original="/img/org/492.jpg"></a>
+                    <a href="/img/493.jpg" data-lightbox="mygallery"><img src="/img/493.jpg" alt="" data-original="/img/org/493.jpg"></a>
+                    <a href="/img/494.jpg" data-lightbox="mygallery"><img src="/img/494.jpg" alt="" data-original="/img/org/494.jpg"></a>
+                    <a href="/img/525.jpg" data-lightbox="mygallery"><img src="/img/525.jpg" alt="" data-original="/img/org/525.jpg"></a>
+                    <a href="/img/504.jpg" data-lightbox="mygallery"><img src="/img/504.jpg" alt="" data-original="/img/org/504.jpg"></a>
+                    <a href="/img/576.jpg" data-lightbox="mygallery"><img src="/img/576.jpg" alt="" data-original="/img/org/576.jpg"></a>
+                      
             </div>
         </div>
-        <div class="modal">
-            <img src="/img/116.jpg" alt="" class="full-img">
-            <p></p>
-        </div>
+        
 
     </main>
 
     <footer>
-        <h1>Footer</h1>
+    
+    <div id="footer" class="footer">
+            <h2>Kontakt</h2>
+            <p>XXX XXX XXX</p>
+            <p>user@site.com</p>
+
+        <div class="wrapper">
+                <div class="icon-instagram"></div>
+                    <a href="https://www.instagram.com/tereza.ricankova.photography/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+
+    </div>
     </footer>            
   
 
