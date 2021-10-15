@@ -5,7 +5,7 @@
     font-family: 'Roboto', 'sans-serif';
     --text-primary: #F6F3E5;
     --text-secondary: #000000;
-    --bg-primary: #d4d4d4dc;
+    --bg-primary: #ffffff;
     --bg-secondary: #141418;
     --shadow: rgba(166, 166, 167, 0.69);
     --transition-speed: 800ms;
@@ -228,6 +228,11 @@ footer{
     margin-top: 20px;
     font-size: 45px;
     color: black;
+    transition: .3s ease-in-out;
+}
+
+.wrapper a i:hover{
+    transform: scale(1.2);
 }
 
 .footer h2{
@@ -239,6 +244,7 @@ footer{
 .footer p{
     font-size: 20px;
     padding-top: 5px;
+    font-weight: bold;
 }
 
 
@@ -249,6 +255,10 @@ footer{
     .nav-links{
         width: 50%;
     }
+
+    header{
+
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -256,11 +266,41 @@ footer{
         overflow-x: hidden; 
     }
     
-    
     header{
-        width: 100%;
+        width: 375px;
+    }
+   
+    main{
+        width: 375px;
+    }
+
+    footer{
+        height: 40vh;
+        margin: 0 auto;
+    }
+   
+    .about{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .photos img{
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about img{
+        width: 350px;
         
     }
+
+    .photos a{
+        width: 70%;
+    }
+
 
     .nav-links{
         position: absolute;
@@ -285,6 +325,9 @@ footer{
     .burger{
         display: block;
     }
+
+
+    
 }
 
 .nav-active{
