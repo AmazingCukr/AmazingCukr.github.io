@@ -7,8 +7,8 @@
     --text-secondary: #000000;
     --bg-primary: #ffffff;
     --bg-secondary: #141418;
-    --shadow: rgba(166, 166, 167, 0.69);
-    --transition-speed: 800ms;
+    --shadow: rgba(166, 166, 167, 0.836);
+    --transition-speed: 200ms;
 }
 
 *{
@@ -40,7 +40,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 6vh;
     background-color:white;
     transition: all .3s ease-in-out;
     z-index: 1;
@@ -75,7 +75,14 @@ nav{
     font-size: 18px;
     font-weight: 800;
     gap: 0px 20px;
+    border-bottom: 2px solid transparent;
+    transition: var(--transition-speed);
     
+}
+
+.nav-links a:hover{
+    transition: border-bottom 0.3s;
+    border-bottom: 2px solid #000000;
 }
 
 .burger{
@@ -131,8 +138,8 @@ nav{
 }
 
 .about-whole p{
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 40px;
 
 }
 
@@ -166,8 +173,9 @@ nav{
 }
 
 .container img:hover{
-    transform: scale(0.95);
-    opacity: .95;
+    transform: scale(0.98);
+    opacity: .98;
+    
     
 }
 
@@ -185,7 +193,7 @@ nav{
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-evenly;
-    margin-top: 10px;
+    margin-top: 20px;
     
     
     
@@ -196,8 +204,8 @@ nav{
     object-fit: cover;
     transition: all 0.3s ease-out;
     cursor: pointer;
-    margin: 20px;
-    box-shadow: 0 0 20px 0 var(--shadow); 
+    margin-bottom: 20px;
+    box-shadow: 0 0 30px 0 var(--shadow); 
     border-radius: 2.5px;
 }
 
@@ -257,7 +265,7 @@ footer{
     }
 
     header{
-
+        width: 1024px;
     }
 }
 
@@ -266,24 +274,31 @@ footer{
         overflow-x: hidden; 
     }
     
+
     header{
-        width: 375px;
+        width: 360px;
     }
    
     main{
-        width: 375px;
+        width: 360px;
     }
 
     footer{
         height: 40vh;
         margin: 0 auto;
     }
-   
+    
+    
+
     .about{
         margin-left: 10px;
         margin-right: 10px;
         padding-top: 0;
         padding-bottom: 20px;
+    }
+
+    .about-whole p{
+        font-size: 20px;
     }
 
     .photos img{
